@@ -1,0 +1,14 @@
+<div class="card p-3">
+  <h4>{{ post?.title }}</h4>
+  <p>{{ post?.description }}</p>
+  <img class="img-fluid mb-2" src="{{ post?.imagePath }}" alt="">
+  <h4>Author : {{ post?.author }}</h4>
+  <p>{{ post?.dateTimeCreated }}</p>
+  <p>Likes : {{ post?.numberOfLikes }}</p>
+  <button>Likes</button>
+  <div>
+    <button class="btn btn-primary" (click)="editPost()">Edit</button> |
+    <button class="btn btn-danger" (click)="deletePost(index)">Delete</button>
+  </div>
+  <hr>
+</div>
